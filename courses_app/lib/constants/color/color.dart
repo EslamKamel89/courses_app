@@ -9,6 +9,7 @@ class AppColors {
   static const Color backgroundColor2 = Colors.white;
   static const Color onBackgroundColor2 = Colors.black;
   static const Color secondryElementColor2 = Color.fromARGB(255, 231, 228, 228);
+  static const Color greyColor = Colors.grey;
 }
 
 class _AppColors2 {

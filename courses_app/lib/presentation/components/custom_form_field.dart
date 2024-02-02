@@ -125,7 +125,7 @@ class _CustomFormFieldState extends State<CustomFormField> {
       case EntryType.passOne:
         return 'Password';
       case EntryType.passTwo:
-        return 'Enter Password Again';
+        return 'Confirm Password';
       default:
     }
     return '';

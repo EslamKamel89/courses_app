@@ -1,4 +1,4 @@
-import 'package:courses_app/presentation/components/circular_image_asset.dart';
+import 'package:courses_app/presentation/components/circular_icon.dart';
 import 'package:flutter/material.dart';
 
 class ThirdPartyAuth extends StatelessWidget {
@@ -13,15 +13,15 @@ class ThirdPartyAuth extends StatelessWidget {
       children: [
         InkWell(
           onTap: () {},
-          child: const CircularImageAsset(imageName: 'google.png'),
+          child: const CircularIcon(iconName: 'google.png'),
         ),
         InkWell(
           onTap: () {},
-          child: const CircularImageAsset(imageName: 'facebook.png'),
+          child: const CircularIcon(iconName: 'facebook.png'),
         ),
         InkWell(
           onTap: () {},
-          child: const CircularImageAsset(imageName: 'apple.png'),
+          child: const CircularIcon(iconName: 'apple.png'),
         ),
       ],
     );

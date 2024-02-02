@@ -7,7 +7,6 @@ import 'package:courses_app/core/extension/extensions.dart';
 import 'package:courses_app/core/router/app_routes_names.dart';
 import 'package:courses_app/data/data_provider/static/onboarding_data.dart';
 import 'package:courses_app/data/models/onBoarding.dart';
-import 'package:courses_app/presentation/homepage/homepage.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "444354708357",
+    "project_id": "ulearning-d0b94",
+    "storage_bucket": "ulearning-d0b94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444354708357:android:e9f432aedff1fed5cdbaec",
+        "android_client_info": {
+          "package_name": "com.example.courses_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444354708357-biecalqpuq47i7uih6ipehuk01chvdem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvK8a4ialIoKQ6J4v_LhOA_RicXPnZKJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444354708357-biecalqpuq47i7uih6ipehuk01chvdem.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "444354708357-775h8osgb138t5iehe97mctqjf4akmtc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.coursesApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444354708357:android:71bceb095975fc4fcdbaec",
+        "android_client_info": {
+          "package_name": "com.example.courses_app89"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444354708357-lsv51vi3lto4aqjp1hmqu74hhrj4qn6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.courses_app89",
+            "certificate_hash": "ff7524777a0cbd92e9ef89001684be59a9508877"
+          }
+        },
+        {
+          "client_id": "444354708357-biecalqpuq47i7uih6ipehuk01chvdem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvK8a4ialIoKQ6J4v_LhOA_RicXPnZKJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444354708357-biecalqpuq47i7uih6ipehuk01chvdem.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "444354708357-775h8osgb138t5iehe97mctqjf4akmtc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.coursesApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
