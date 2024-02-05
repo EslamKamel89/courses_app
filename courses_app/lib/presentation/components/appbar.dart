@@ -1,4 +1,4 @@
-import 'package:courses_app/constants/color/color.dart';
+import 'package:courses_app/constants/color.dart';
 import 'package:courses_app/core/textstyle/text_style.dart';
 import 'package:courses_app/presentation/components/circular_icon.dart';
 import 'package:flutter/material.dart';

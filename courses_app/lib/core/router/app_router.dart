@@ -3,6 +3,7 @@ import 'package:courses_app/buisness_logic/auth/signup_bloc/signup_bloc.dart';
 import 'package:courses_app/buisness_logic/mainpage/mainpage_bloc/mainpage_bloc.dart';
 import 'package:courses_app/buisness_logic/welcome_bloc/welcome_bloc.dart';
 import 'package:courses_app/core/router/app_routes_names.dart';
+import 'package:courses_app/core/router/middleware.dart';
 import 'package:courses_app/presentation/screens/auth/signin/signin_screen.dart';
 import 'package:courses_app/presentation/screens/auth/signup/signup_screen.dart';
 import 'package:courses_app/presentation/screens/mainpage/mainpage.dart';
@@ -14,7 +15,8 @@ class AppRouter extends Bloc {
   AppRouter(super.initialState);
   Route? onGenerateRoute(RouteSettings routeSettings) {
     final args = routeSettings.arguments;
-    switch (routeSettings.name) {
+    String? routeName = AppMiddleWare.middlleware(routeSettings.name);
+    switch (routeName) {
       case AppRoutesNames.welcome:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
@@ -46,7 +48,7 @@ class AppRouter extends Bloc {
         return MaterialPageRoute(
             builder: (context) => BlocProvider(
                   create: (context) => MainpageBloc(),
-                  child: MainPage(),
+                  child: const MainPage(),
                 ));
       default:
         return null;

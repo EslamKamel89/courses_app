@@ -1,6 +1,6 @@
 // ignore_for_file: unused_import
 
-import 'package:courses_app/constants/color/color.dart';
+import 'package:courses_app/constants/color.dart';
 import 'package:courses_app/core/extension/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -1,5 +1,5 @@
 import 'package:courses_app/buisness_logic/auth/signin_bloc/signin_bloc.dart';
-import 'package:courses_app/constants/color/color.dart';
+import 'package:courses_app/constants/color.dart';
 import 'package:courses_app/presentation/components/decorated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

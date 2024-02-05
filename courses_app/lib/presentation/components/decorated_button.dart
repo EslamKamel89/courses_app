@@ -1,4 +1,4 @@
-import 'package:courses_app/constants/color/color.dart';
+import 'package:courses_app/constants/color.dart';
 import 'package:courses_app/presentation/components/material_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

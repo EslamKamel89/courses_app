@@ -1,17 +1,12 @@
+import 'package:courses_app/core/global/global.dart';
 import 'package:courses_app/core/router/app_router.dart';
 import 'package:courses_app/core/router/app_routes_names.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'firebase_options.dart';
-
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await GlobalServices.init();
   runApp(const MyApp());
 }
 
@@ -22,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (context) => AppRouter(0)),
+        BlocProvider(create: (_) => AppRouter(0)),
       ],
       child: ScreenUtilInit(
         designSize: const Size(392.72727272727275, 781.0909090909091),
@@ -37,8 +32,8 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
             ),
-            initialRoute: AppRoutesNames.mainPage, // for devolping only
-            // initialRoute: AppRoutesNames.welcome,
+            // initialRoute: AppRoutesNames.mainPage, // for devolping only
+            initialRoute: AppRoutesNames.welcome,
             onGenerateRoute: appRouter.onGenerateRoute,
           );
         },

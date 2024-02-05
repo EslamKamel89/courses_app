@@ -1,5 +1,5 @@
 import 'package:courses_app/buisness_logic/mainpage/mainpage_bloc/mainpage_bloc.dart';
-import 'package:courses_app/constants/color/color.dart';
+import 'package:courses_app/constants/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

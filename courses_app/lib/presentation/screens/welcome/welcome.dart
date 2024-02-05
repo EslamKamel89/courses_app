@@ -3,7 +3,9 @@
 import 'package:courses_app/buisness_logic/welcome_bloc/welcome_bloc.dart';
 import 'package:courses_app/buisness_logic/welcome_bloc/welcome_events.dart';
 import 'package:courses_app/buisness_logic/welcome_bloc/welcome_states.dart';
+import 'package:courses_app/constants/sharedpreference_key.dart';
 import 'package:courses_app/core/extension/extensions.dart';
+import 'package:courses_app/core/global/global.dart';
 import 'package:courses_app/core/router/app_routes_names.dart';
 import 'package:courses_app/data/data_provider/static/onboarding_data.dart';
 import 'package:courses_app/data/models/onBoarding.dart';
@@ -132,6 +134,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               );
             } else {
               'Last page arrived exit onBoarding '.prt;
+              GlobalServices.localStorage.inst.setBool(AppStorageKey.STORAGE_DEVICE_OPEN_FIRST_TIME, true);
               Navigator.of(context).pushNamedAndRemoveUntil(AppRoutesNames.signin, (route) => false);
             }
           },
