@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CircularIcon extends StatelessWidget {
-  const CircularIcon({super.key, required this.iconName, this.size});
+  const CircularIcon({super.key, required this.iconName, this.size, this.child, this.childAlignment});
   final String iconName;
   final double? size;
+  final Widget? child;
+  final AlignmentGeometry? childAlignment;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,8 @@ class CircularIcon extends StatelessWidget {
           image: AssetImage('assets/icons/$iconName'),
         ),
       ),
+      alignment: childAlignment,
+      child: child,
     );
   }
 }

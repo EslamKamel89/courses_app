@@ -46,9 +46,49 @@ class MyAppBar {
               ),
               const Spacer(),
               InkWell(
-                onTap: personOnTap ?? () => 'Reloading Completed'.prt,
+                onTap: personOnTap,
                 child: CircularIcon(
                   iconName: 'img.png',
+                  size: 40.w,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  static AppBar profile(
+    BuildContext context, {
+    required title,
+    void Function()? menuOnTap,
+    void Function()? additionalSetting,
+  }) {
+    return AppBar(
+      elevation: 0.0,
+      backgroundColor: AppColors.backgroundColor2,
+      toolbarHeight: 50.h,
+      title: Column(
+        children: [
+          SizedBox(height: 10.h),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              InkWell(
+                onTap: menuOnTap,
+                child: CircularIcon(
+                  iconName: 'menu.png',
+                  size: 40.w,
+                ),
+              ),
+              const Spacer(),
+              Txt.title(title, color: AppColors.onBackgroundColor2),
+              const Spacer(),
+              InkWell(
+                onTap: additionalSetting ?? () => 'Reloading Completed'.prt,
+                child: CircularIcon(
+                  iconName: 'more-vertical.png',
                   size: 40.w,
                 ),
               ),
