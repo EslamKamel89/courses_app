@@ -134,7 +134,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               );
             } else {
               'Last page arrived exit onBoarding '.prt;
-              GlobalServices.localStorage.inst.setBool(AppStorageKey.STORAGE_DEVICE_OPEN_FIRST_TIME, true);
+              GlobalServices.localStorage.inst.setBool(AppStorageKey.deviceOpenFirstTime, true);
               Navigator.of(context).pushNamedAndRemoveUntil(AppRoutesNames.signin, (route) => false);
             }
           },

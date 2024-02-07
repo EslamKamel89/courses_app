@@ -9,6 +9,7 @@ class Txt {
     Color? color,
     double? size,
     TextOverflow overFlow = TextOverflow.ellipsis,
+    FontWeight? fontWeight,
   }) {
     return Text(
       text,
@@ -19,7 +20,7 @@ class Txt {
         overflow: overFlow,
         color: color,
         // fontFamily: 'CairoPlay',
-        fontWeight: FontWeight.w400,
+        fontWeight: fontWeight ?? FontWeight.w400,
       ),
     );
   }
@@ -30,6 +31,7 @@ class Txt {
     double? size,
     TextOverflow overFlow = TextOverflow.ellipsis,
     TextDecoration? decoration,
+    int? maxLines,
   }) {
     return Text(
       text,
@@ -43,6 +45,7 @@ class Txt {
         decorationThickness: 1,
         decorationColor: color,
       ),
+      maxLines: maxLines,
     );
   }
 

@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => AppRouter(0)),
       ],
       child: ScreenUtilInit(
-        designSize: const Size(392.72727272727275, 781.0909090909091),
+        designSize: const Size(375, 812),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {

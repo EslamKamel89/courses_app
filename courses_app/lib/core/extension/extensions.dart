@@ -31,6 +31,10 @@ extension ExpandOneWidget on Widget {
   Widget get ex => Expanded(child: this);
 }
 
+extension SliverAdapter on Widget {
+  Widget get sliver => SliverToBoxAdapter(child: this);
+}
+
 extension CenterAllWidgets on List<Widget> {
   List<Widget> get center => map((e) => Center(child: e)).toList();
 }

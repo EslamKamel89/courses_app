@@ -23,6 +23,7 @@ class AppRouter extends Bloc {
             create: (context) => WelcomeBloc(),
             child: const WelcomeScreen(),
           ),
+          settings: routeSettings,
         );
       // case AppRoutesNames.homepage:
       //   return MaterialPageRoute(
@@ -33,23 +34,28 @@ class AppRouter extends Bloc {
       //   );
       case AppRoutesNames.signin:
         return MaterialPageRoute(
-            builder: (context) => BlocProvider(
-                  create: (context) => SigninBloc(),
-                  child: SigninScreen(),
-                ));
+          builder: (context) => BlocProvider(
+            create: (context) => SigninBloc(),
+            child: SigninScreen(),
+          ),
+          settings: routeSettings,
+        );
       case AppRoutesNames.signup:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
             create: (context) => SignupBloc(),
             child: SignupScreen(),
           ),
+          settings: routeSettings,
         );
       case AppRoutesNames.mainPage:
         return MaterialPageRoute(
-            builder: (context) => BlocProvider(
-                  create: (context) => MainpageBloc(),
-                  child: const MainPage(),
-                ));
+          builder: (context) => BlocProvider(
+            create: (context) => MainpageBloc(),
+            child: const MainPage(),
+          ),
+          settings: routeSettings,
+        );
       default:
         return null;
     }
